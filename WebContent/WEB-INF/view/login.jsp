@@ -31,19 +31,19 @@
 	
 	<div class="row" style="margin-top:100px;align:center">
 		<div class="col-sm-offset-4 col-sm-4">
-			<form action="Login" method="post" class="form-horizontal" role="form">
+			<form action="Login" method="post"  role="form">
 				<div class="form-group">
 					<div class="col-sm-12">
 						<input type="text" name="username" class="form-control" placeholder="请输入用户名">
 					</div>
 				</div>
-				<div class="form-group">
-					<div class="col-sm-12">
+				<div class="form-group" >
+					<div class="col-sm-12" style="margin-top:15px">
 						<input type="password" name="password" class="form-control" placeholder="请输入密码">
 					</div>
 				</div>
-				<div class="form-group">
-					<div class="col-sm-12">
+				<div class="form-group" >
+					<div class="col-sm-12" style="margin-top:15px">
 						<button type="submit" class="btn btn-primary" class="form-control" style="width:100%">登录</button>
 					</div>
 				</div>
@@ -60,9 +60,10 @@
 				%>
 			</form>
 			<!-- 注册 -->
-				<div class="col-sm-12">	
+				<div class="col-sm-12" style="margin-top:15px">	
 					<a href="RegisterUI" type="button" class="btn btn-primary form-horizontal"  style="width:100%">注册</a>
 				</div>
+			
 		</div>
 	</div>
 </body>

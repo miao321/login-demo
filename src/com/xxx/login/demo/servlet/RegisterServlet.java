@@ -38,7 +38,7 @@ public class RegisterServlet extends HttpServlet {
 			String username=request.getParameter("username");
 			String password=request.getParameter("password");
 			result=registerService.register(username, password);
-			request.getRequestDispatcher("/WEB-INF/view/register.jsp").forward(request, response);				
+			//request.getRequestDispatcher("/WEB-INF/view/register.jsp").forward(request, response);				
 
 		}catch(Exception e){
 			//数据库连接创建失败
