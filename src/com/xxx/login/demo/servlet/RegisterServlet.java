@@ -15,8 +15,6 @@ import com.xxx.login.demo.service.impl.RegisterServiceImpl;
 import com.xxx.login.demo.util.PathUtils;
 import com.xxx.login.demo.util.Result;
 
-
-
 /**
  * 处理注册请求
  * @author miao
@@ -32,7 +30,6 @@ public class RegisterServlet extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
 		//实现注册功能
-		request.getRequestDispatcher(PathUtils.JSP_REGISTER).forward(request, response);				
 		RegisterService registerService=null;
 		Result result=null;
 		try{
@@ -41,7 +38,7 @@ public class RegisterServlet extends HttpServlet {
 			String username=request.getParameter("username");
 			String password=request.getParameter("password");
 			result=registerService.register(username, password);
-			request.getRequestDispatcher(PathUtils.JSP_REGISTER).forward(request, response);				
+			request.getRequestDispatcher("/WEB-INF/view/register.jsp").forward(request, response);				
 
 		}catch(Exception e){
 			//数据库连接创建失败
