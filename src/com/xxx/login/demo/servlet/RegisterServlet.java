@@ -32,7 +32,7 @@ public class RegisterServlet extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
 		//实现注册功能
-						
+		request.getRequestDispatcher(PathUtils.JSP_REGISTER).forward(request, response);				
 		RegisterService registerService=null;
 		Result result=null;
 		try{
@@ -41,7 +41,8 @@ public class RegisterServlet extends HttpServlet {
 			String username=request.getParameter("username");
 			String password=request.getParameter("password");
 			result=registerService.register(username, password);
-			System.out.println(result);
+			request.getRequestDispatcher(PathUtils.JSP_REGISTER).forward(request, response);				
+
 		}catch(Exception e){
 			//数据库连接创建失败
 			logger.error("{}", e);
