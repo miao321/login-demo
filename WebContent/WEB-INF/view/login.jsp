@@ -60,13 +60,9 @@
 				%>
 			</form>
 			<!-- 注册 -->
-				
-					<div class="col-sm-12">
-						<button type="button" class="btn btn-primary form-horizontal"  style="width:100%">
-							<a href="${pageContext.request.contextPath}/RegisterUI" target="_blank"></a>
-						注册</button>
-					</div>
-				
+				<div class="col-sm-12">	
+					<a href="RegisterUI" type="button" class="btn btn-primary form-horizontal"  style="width:100%">注册</a>
+				</div>
 		</div>
 	</div>
 </body>

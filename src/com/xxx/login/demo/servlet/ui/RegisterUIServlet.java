@@ -10,7 +10,7 @@ import javax.servlet.http.HttpServletResponse;
 /**
  * Servlet implementation class RegisterUIServlet
  */
-//@WebServlet(name="register",urlPatterns={"/register"})
+
 public class RegisterUIServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 

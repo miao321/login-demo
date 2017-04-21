@@ -30,7 +30,7 @@
 	
 	<div class="row" style="margin-top:100px;align:center">
 		<div class="col-sm-offset-4 col-sm-4">
-			<form action="${pageContext.request.contextPath }/Register" method="post" class="form-horizontal" role="form">
+			<form action="Register" method="post" class="form-horizontal" role="form">
 				<div class="form-group">
 					<div class="col-sm-12">
 						<input type="text" name="username" class="form-control" placeholder="请输入用户名">

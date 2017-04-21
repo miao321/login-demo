@@ -19,7 +19,7 @@
   </servlet>
   <servlet>
     <servlet-name>RegisterUIServlet</servlet-name>
-    <servlet-class>com.xxx.login.demo.servlet.RegisterUIServlet</servlet-class>
+    <servlet-class>com.xxx.login.demo.servlet.ui.RegisterUIServlet</servlet-class>
   </servlet>
   <servlet-mapping>
     <servlet-name>IndexServlet</servlet-name>
