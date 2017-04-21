@@ -39,7 +39,7 @@
 				</div>
 				<div class="form-group">
 					<div class="col-sm-12">
-						<input type="password" name="passowrd" class="form-control" placeholder="请输入密码">
+						<input type="password" name="password" class="form-control" placeholder="请输入密码">
 					</div>
 				</div>
 				<div class="form-group">
@@ -47,10 +47,7 @@
 						<button type="submit" class="btn btn-primary" class="form-control" style="width:100%">登录</button>
 					</div>
 				</div>
-				
-				
-				<!-- 注册 -->
-				
+			
 				<!-- 判断是否有错误信息，有的话显示出来 -->
 				<%
 					if(result!=null){
@@ -62,6 +59,14 @@
 					}
 				%>
 			</form>
+			<!-- 注册 -->
+				<div class="form-group">
+					<div class="col-sm-12">
+						<button type="button" class="btn btn-primary form-horizontal"  style="width:100%">
+							<a href="Register"></a>
+						注册</button>
+					</div>
+				</div>
 		</div>
 	</div>
 </body>

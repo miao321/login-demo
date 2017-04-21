@@ -45,7 +45,7 @@ public class UserDaoImpl implements UserDao{
 		}
 		String id=generateId();  //给user生成id
 		
-		PreparedStatement statement=connection.prepareStatement("insert into user values(?,?,?)");
+		PreparedStatement statement=connection.prepareStatement("insert into user(id,username,password) values(?,?,?)");
 		statement.setString(1, id);
 		statement.setString(2, username);
 		statement.setString(3, EncryptUtils.encript(password));    //保存是加密的密码
