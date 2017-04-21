@@ -60,13 +60,13 @@
 				%>
 			</form>
 			<!-- 注册 -->
-				<div class="form-group">
+				
 					<div class="col-sm-12">
 						<button type="button" class="btn btn-primary form-horizontal"  style="width:100%">
 							<a href="Register"></a>
 						注册</button>
 					</div>
-				</div>
+				
 		</div>
 	</div>
 </body>
